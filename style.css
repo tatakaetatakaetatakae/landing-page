@@ -10,10 +10,6 @@
     padding: 0;
     font-family: 'Rubik', sans-serif;
 }
-body{
-    margin: 0;
-    padding: 0;
-}
 /* first section styling , it contains a nav bar and a welcome section */
 #one{
     background-color: #1f2937;
@@ -26,7 +22,6 @@ body{
     /* outline: 2px solid white; */
     margin-inline : var(--mg-inline-1);
     flex-wrap: wrap;
-    flex-shrink: 1;
 }
 
 ul{
@@ -124,22 +119,23 @@ li > a{
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 .wrapper-inside{
+    width: min-content;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
     /* outline: 2px solid green; */
     align-items: center;
-    flex-wrap: wrap;
 }
 .wrapper-inside > p {
     text-align: center;
 }
 .card{
-    height: 10rem;
-    width: 10rem;
+    height: 9rem;
+    width: 9rem;
     border: 5px solid #3882f6;
     border-radius: 15px;
 }
@@ -150,12 +146,17 @@ li > a{
 #three{
     background-color: #e5e7eb;
     padding-block: 8rem;
+    display: flex;
+    justify-content: center;
 }
 .quote{
-    margin-inline: var(--mg-inline-3);
+    width: 60%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    /* outline: 2px solid red; */
 }
 .quote > #quote{
     font-size: 36px;
@@ -181,7 +182,9 @@ li > a{
     padding-block: 3rem;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
 }
 .call > .left{
     color: white;
@@ -236,5 +239,6 @@ footer > p {
 
     .header {
         margin-inline: 1rem;
+        gap: 2rem;
     }
 }
