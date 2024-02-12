@@ -52,12 +52,11 @@ li > a{
     /* outline: 2px solid red; */
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    
     margin-inline: var(--mg-inline-1);
     margin-block-start: 90px;
     padding-block-end: 120px;
     gap: 1rem;
-    flex-wrap: wrap;
 }
 .container1{
     display: flex;
@@ -95,15 +94,15 @@ li > a{
     color : white;
 }
 .container2{
+    /* outline: 2px red solid; */
     display: flex;
     background-color: grey;
-    width: 600px;
+    width: 500px;
     height: 230px;
     justify-content: center;
     align-items: center;
     color : white;
     font-size: x-large;
-    flex-wrap: wrap;
 }
 
 /* styling the second section which contains informations */
